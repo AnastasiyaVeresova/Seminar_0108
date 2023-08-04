@@ -17,5 +17,4 @@ bool result = MultiplicityTwoNumbers(number, 3, 11);
 
 Console.WriteLine(result? "Кратно" : "Не кратно");
 
-2
 
