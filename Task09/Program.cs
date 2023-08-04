@@ -21,10 +21,12 @@ Console.WriteLine($"Случайное число в диапазоне 10 - 99 
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
 
-int MaxDigit(int num)
+int MaxDigit(int num) // num = number
 {
     int firstDigit = num / 10; // 78 / 10 = 7
     int secondDigit = num % 10; // 78 % 10 = 8
     int result = firstDigit > secondDigit ? firstDigit : secondDigit;
     return result; // return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
+
+//В одной области видимости нельзя использовать переменные с одинаковым названием"
