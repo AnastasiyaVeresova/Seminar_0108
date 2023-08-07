@@ -17,10 +17,10 @@ while (number > 999)
     number = number / 10;
 
 if (number > 99 && number < 1000)
-    {
+{
     int result = ThreeDigit(number);
     Console.WriteLine($"Третья цифра числа -> {result}");
-    }
+}
 }
 
 if (number < 100)
