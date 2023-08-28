@@ -7,8 +7,10 @@ int Exponentiation(int num, int exp)
     int res = 1;
     for (int i = 1; i <= exp; i++)
     {
-        
-        res *= num;
+        checked
+        {
+            res *= num;
+        }
     }
     return res;
 }
@@ -22,12 +24,11 @@ int exponenta = Convert.ToInt32(Console.ReadLine());
 
 int exponentiation = Exponentiation(number, exponenta);
 
-if(exponenta < 0)
+if (exponenta < 1)
 {
     Console.WriteLine("Введено некорректное число для возведения в степень");
     return;
 }
 
 Console.WriteLine($"число {number} в степени {exponenta} = {exponentiation}");
-
 
