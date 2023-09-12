@@ -1,7 +1,5 @@
 ﻿// Задаем две матрицы. Программа находит произведение двух матриц.
 
-// Задаем прямоугольный двумерный массив. Программа находит строку с наименьшей суммой элементов.
-
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
@@ -35,20 +33,13 @@ void PrintArr(int[,] matrix)
 
 void MultiplyArray(int[,] arrayFirst, int[,] arraySecond, int[,] arrayMultiplyResult)
 {
-     
-
-     for (int i = 0; i < arrayMultiplyResult.GetLength(0); i++)
-     {
+    for (int i = 0; i < arrayMultiplyResult.GetLength(0); i++)
+    {
         for (int j = 0; j < arrayMultiplyResult.GetLength(1); j++)
         {
-            
-           
-                arrayMultiplyResult[i, j] += arrayFirst[i, j] * arraySecond[i, j];
-          
-        
-           
+            arrayMultiplyResult[i, j] += arrayFirst[i, j] * arraySecond[i, j];
         }
-     }
+    }
 }
 
 int[,] firstArr = CreateMatrixRndInt(3, 4, 0, 10);
@@ -56,10 +47,10 @@ int[,] secondArr = CreateMatrixRndInt(3, 4, 0, 10);
 int[,] matrixResult = new int[3, 4];
 
 PrintArr(firstArr);
- Console.WriteLine();
+Console.WriteLine();
 PrintArr(secondArr);
 MultiplyArray(firstArr, secondArr, matrixResult);
- Console.WriteLine();
- PrintArr(matrixResult);
+Console.WriteLine();
+PrintArr(matrixResult);
 
 
