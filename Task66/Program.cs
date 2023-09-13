@@ -11,7 +11,7 @@ int Prompt(string message)
 
 void Validation(int num)
 {
-    while(num < 1)
+    while (num < 1)
     {
         num = Prompt("Неверно введено число. Введите натуральное число: ");
     }
@@ -22,19 +22,19 @@ int FindSumNumbers(int from, int to)
 {
     int res = 0;
 
-    if(from == to)
+    if (from == to)
     {
         return res += from;
     }
     else if (from < to)
     {
-     return res += from + FindSumNumbers(from + 1, to);
+        return res += from + FindSumNumbers(from + 1, to);
     }
     else
     {
         return res += from + FindSumNumbers(from - 1, to);
     }
-}  
+}
 
 
 Console.WriteLine("Введите диапазон натуральных чисел");
