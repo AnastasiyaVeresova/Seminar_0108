@@ -12,7 +12,7 @@ int Prompt(string message)
 
 int Validation(int num)
 {
-    while(num < 1)
+    while (num < 1)
     {
         num = Prompt("Неверно введено число. Введите натуральное число: ");
     }
@@ -21,13 +21,13 @@ int Validation(int num)
 
 int NaturalNumbers(int num)
 {
-    if(num == 1) return 1;
+    if (num == 1) return 1;
     Console.Write($"{num} ");
-    return NaturalNumbers (num - 1);
+    return NaturalNumbers(num - 1);
 }
 
 int number = Prompt("Введите натуральное число: ");
 number = Validation(number);
 
 
- Console.WriteLine(NaturalNumbers(number));
+Console.WriteLine(NaturalNumbers(number));
